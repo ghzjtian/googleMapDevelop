@@ -1,0 +1,328 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>GoogleMap\_Android\_开发 | Google map 开发</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.6.7">
+        <meta name="author" content="JingTianZeng">
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="gitbook/plugins/gitbook-plugin-tbfed-pagefooter/footer.css">
+        
+    
+        
+        <link rel="stylesheet" href="gitbook/plugins/gitbook-plugin-splitter/splitter.css">
+        
+    
+        
+        <link rel="stylesheet" href="gitbook/plugins/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+        
+    
+        
+        <link rel="stylesheet" href="gitbook/plugins/gitbook-plugin-highlight/website.css">
+        
+    
+        
+        <link rel="stylesheet" href="gitbook/plugins/gitbook-plugin-search/search.css">
+        
+    
+        
+        <link rel="stylesheet" href="gitbook/plugins/gitbook-plugin-fontsettings/website.css">
+        
+    
+    
+
+        
+    
+    
+    <link rel="next" href="./googlemapios-kai-fa.html" />
+    
+    
+    <link rel="prev" href="./index.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <div class="book"
+        data-level="1"
+        data-chapter-title="GoogleMap\_Android\_开发"
+        data-filepath="chapter1.md"
+        data-basepath="."
+        data-revision="Wed Nov 22 2017 16:28:01 GMT+0800 (CST)"
+        data-innerlanguage="">
+    
+
+<div class="book-summary">
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+                
+                <li>
+                    <a href="./index.html" target="blank" class="custom-link">Home</a>
+                </li>
+            
+            
+
+            
+            <li class="divider"></li>
+            
+
+            
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="./index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        Introduction
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="1" data-path="chapter1.html">
+            
+                
+                    <a href="./chapter1.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        GoogleMap\_Android\_开发
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="googlemapios-kai-fa.html">
+            
+                
+                    <a href="./googlemapios-kai-fa.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        GoogleMap\_iOS\_开发
+                    </a>
+            
+            
+        </li>
+    
+
+
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                    Published with GitBook
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header" role="navigation">
+    <!-- Actions Left -->
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="./" >Google map 开发</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h1 id="googlemap-android-&#x5F00;&#x53D1;">GoogleMap Android &#x5F00;&#x53D1;</h1>
+<blockquote>
+<p><a href="https://developers.google.com/maps/documentation/android-api/start" target="_blank">https://developers.google.com/maps/documentation/android-api/start</a></p>
+</blockquote>
+<h3 id="1google&#x57FA;&#x7840;&#x5730;&#x56FE;-demo-">1.Google&#x57FA;&#x7840;&#x5730;&#x56FE; Demo :</h3>
+<h3 id="2&#x5BFC;&#x51FA;-sha1-key"><a href="#generate_key">2.&#x5BFC;&#x51FA; SHA-1 KEY</a></h3>
+<h3 id="3&#x5728;&#x9879;&#x76EE;&#x4E2D;&#x5BFC;&#x5165;-google-play-services-"><a href="#input_play_services">3.&#x5728;&#x9879;&#x76EE;&#x4E2D;&#x5BFC;&#x5165; Google Play Services .</a></h3>
+<h3 id="4&#x521B;&#x5EFA;-api-&#x5BC6;&#x94A5;"><a href="#generate_api_key">4.&#x521B;&#x5EFA; API &#x5BC6;&#x94A5;.</a></h3>
+<ul>
+<li>1.&#x751F;&#x6210;&#x5BC6;&#x94A5;</li>
+<li>2.&#x628A;&#x5BC6;&#x94A5;&#x653E;&#x8FDB;&#x9879;&#x76EE;</li>
+</ul>
+<h3 id="5&#x6CE8;&#x610F;&#x4E8B;&#x9879;"><a href="#attention_items">5.&#x6CE8;&#x610F;&#x4E8B;&#x9879;</a></h3>
+<h3 id="6&#x624B;&#x673A;&#x76F8;&#x5173;&#x622A;&#x56FE;"><a href="#phone_screenShot">6.&#x624B;&#x673A;&#x76F8;&#x5173;&#x622A;&#x56FE;.</a></h3>
+<hr>
+<hr>
+<hr>
+<h3 id="1google&#x57FA;&#x7840;&#x5730;&#x56FE;-demo-">1.Google&#x57FA;&#x7840;&#x5730;&#x56FE; Demo :</h3>
+<blockquote>
+<p>Google Maps Android API v2 Samples
+<a href="https://github.com/googlemaps/android-samples" target="_blank">https://github.com/googlemaps/android-samples</a></p>
+</blockquote>
+<h3 id="2&#x5BFC;&#x51FA;-sha1-key">2.&#x5BFC;&#x51FA; SHA-1 KEY<a name="generate_key"></a></h3>
+<blockquote>
+<p><a href="https://developers.google.com/maps/documentation/android-api/signup" target="_blank">https://developers.google.com/maps/documentation/android-api/signup</a></p>
+</blockquote>
+<h5 id="1&#x56E0;&#x4E3A;-google-&#x5730;&#x56FE;&#x8981;&#x5BFC;&#x5165;-api-key-&#x624D;&#x80FD;&#x8FD0;&#x884C;&#xFF0C;&#x800C;-api-key-&#x5206;&#x4E3A;-debug-key-&#x548C;-release-key&#x6240;&#x4EE5;&#x8981;&#x5206;&#x522B;&#x5BFC;&#x51FA;&#x8FD9;&#x4E24;&#x79CD;-key-&#x7684;-sha1">* 1.&#x56E0;&#x4E3A; Google &#x5730;&#x56FE;&#x8981;&#x5BFC;&#x5165; API key &#x624D;&#x80FD;&#x8FD0;&#x884C;&#xFF0C;&#x800C; API key &#x5206;&#x4E3A; debug key &#x548C; release key.&#x6240;&#x4EE5;&#x8981;&#x5206;&#x522B;&#x5BFC;&#x51FA;&#x8FD9;&#x4E24;&#x79CD; Key &#x7684; sha1.</h5>
+<ul>
+<li><p>1.Debug Key:</p>
+<ul>
+<li><p>Mac:</p>
+<ul>
+<li>&#x5728;&#x7EC8;&#x7AEF;&#x8F93;&#x5165;<pre><code>keytool -list -v -keystore ~/.android/debug.keystore -alias androiddebugkey -storepass android -keypass android
+</code></pre>&#x51FA;&#x73B0;:</li>
+</ul>
+<pre><code>$ keytool -list -v -keystore ~/.android/debug.keystore -alias androiddebugkey -storepass android -keypass android
+&#x522B;&#x540D;: androiddebugkey
+&#x521B;&#x5EFA;&#x65E5;&#x671F;: 2017-10-16
+&#x6761;&#x76EE;&#x7C7B;&#x578B;: PrivateKeyEntry
+&#x8BC1;&#x4E66;&#x94FE;&#x957F;&#x5EA6;: 1
+&#x8BC1;&#x4E66;[1]:
+&#x6240;&#x6709;&#x8005;: C=US, O=Android, CN=Android Debug
+&#x53D1;&#x5E03;&#x8005;: C=US, O=Android, CN=Android Debug
+&#x5E8F;&#x5217;&#x53F7;: 1
+&#x6709;&#x6548;&#x671F;&#x5F00;&#x59CB;&#x65E5;&#x671F;: Mon Oct 16 15:07:30 CST 2017, &#x622A;&#x6B62;&#x65E5;&#x671F;: Wed Oct 09 15:07:30 CST 2047
+&#x8BC1;&#x4E66;&#x6307;&#x7EB9;:
+MD5: 39:98:89:03:DB:4B:A8:8C:C7:58:3C:16:87:B1:42:89
+SHA1: C9:9C:70:74:56:56:A0:F4:54:A9:9C:08:92:3B:0D:A1:93:2F:EF:68
+SHA256: 82:53:BB:E4:3B:70:22:7E:96:42:8F:07:72:3E:D2:40:FF:9F:21:2F:25:13:41:95:E3:68:D4:AA:7A:7D:24:58
+&#x7B7E;&#x540D;&#x7B97;&#x6CD5;&#x540D;&#x79F0;: SHA1withRSA
+&#x7248;&#x672C;: 1
+</code></pre></li>
+<li>2.Release Key<pre><code>keytool -list -v -keystore your_keystore_name -alias your_alias_name
+</code></pre></li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3 id="3&#x5728;&#x9879;&#x76EE;&#x4E2D;&#x5BFC;&#x5165;-google-play-services-">3.&#x5728;&#x9879;&#x76EE;&#x4E2D;&#x5BFC;&#x5165; Google Play Services .<a name="input_play_services"></a></h3>
+<blockquote>
+<p>1.&#x56E0;&#x4E3A; Google Map &#x7528;&#x5230;&#x4E86; Google services .&#x6240;&#x4EE5;&#x9879;&#x76EE;&#x9700;&#x8981;&#x5BFC;&#x5165; Google services SDK.</p>
+<p>2.&#x56FD;&#x4EA7;&#x673A;&#x9ED8;&#x8BA4;&#x6CA1;&#x6709; google services &#xFF0C;&#x6240;&#x4EE5;&#x9700;&#x8981;&#x81EA;&#x5DF1;&#x624B;&#x52A8;&#x5B89;&#x88C5;&#x4E86; google services &#x624D;&#x80FD;&#x4F7F;&#x7528; google map .</p>
+<p>3.&#x53C2;&#x8003;: <a href="https://developers.google.com/android/guides/setup" target="_blank">https://developers.google.com/android/guides/setup</a></p>
+<p>4.&#x5982;&#x679C;&#x51FA;&#x9519; <code>Could not find dependency</code>&#xFF0C;&#x8BE6;&#x60C5;&#x8BF7;&#x53C2;&#x8003;&#x4E0A;&#x9762;&#x7684;&#x94FE;&#x63A5;.</p>
+<pre><code>If you receive an error, check that your top-level build.gradle contains a reference to the google() repo or to maven { url &quot;https://maven.google.com&quot; }
+</code></pre><hr>
+</blockquote>
+<h3 id="4&#x521B;&#x5EFA;-api-&#x5BC6;&#x94A5;">4.&#x521B;&#x5EFA; API &#x5BC6;&#x94A5;.<a name="generate_api_key"></a></h3>
+<ul>
+<li>1.&#x751F;&#x6210;&#x5BC6;&#x94A5;<blockquote>
+<p>1.&#x4FEE;&#x6539;&#x4E86;&#x5BC6;&#x94A5;&#x540E;&#xFF0C;&#x53EF;&#x80FD;&#x8981; 5Min &#x624D;&#x80FD;&#x751F;&#x6548;.
+3.&#x4E00;&#x5B9A;&#x8981;&#x51C6;&#x786E;&#xFF0C;&#x5426;&#x5219;&#x4F1A;&#x53D1;&#x751F;&#x4EE5;&#x4E0B;&#x9519;&#x8BEF;:</p>
+</blockquote>
+</li>
+</ul>
+<pre><code>E/Google Maps Android API: Authorization failure.  Please see ...
+</code></pre><ul>
+<li><p>&#x4E0B;&#x9762;&#x662F;&#x56FE;&#x7247;&#x6559;&#x7A0B;:
+<img src="assets/Snip20171122_1.png" alt="">
+<img src="assets/Snip20171122_2.png" alt="">
+<img src="assets/Snip20171122_4.png" alt="">
+<img src="assets/Snip20171122_5.png" alt="">
+<img src="assets/Snip20171122_7.png" alt="">
+<img src="assets/Snip20171122_8.png" alt=""></p>
+</li>
+<li><p>2.&#x628A;&#x5BC6;&#x94A5;&#x653E;&#x8FDB;&#x9879;&#x76EE;</p>
+</li>
+</ul>
+<pre><code>   &lt;string name=&quot;google_maps_key&quot; translatable=&quot;false&quot; templateMergeStrategy=&quot;preserve&quot;&gt;AIzaSyA9A-etWlzs4TD-cOKhVW8qiHF3GXF-pvI&lt;/string&gt;
+</code></pre><p><img src="assets/Snip20171122_10.png" alt=""></p>
+<hr>
+<h3 id="5&#x6CE8;&#x610F;&#x4E8B;&#x9879;">5.&#x6CE8;&#x610F;&#x4E8B;&#x9879;<a name="attention_items"></a></h3>
+<ul>
+<li>1.&#x66F4;&#x6539;&#x4E86; API &#x5BC6;&#x94A5;&#x540E;&#xFF0C;&#x8BB0;&#x5F97;&#x5378;&#x8F7D;&#x5E76;&#x91CD;&#x65B0;&#x5B89;&#x88C5;.!!!</li>
+<li>2.&#x51FA;&#x73B0;<code>Unexpected response code 400</code>&#x9519;&#x8BEF;&#xFF0C;&#x5728;&#x53BB;&#x9664;&#x4E86;API&#x9650;&#x5236;&#x540E;&#xFF0C;&#x5C31;&#x53C8;&#x53EF;&#x4EE5;&#x6B63;&#x5E38;&#x8FD0;&#x884C;&#x4E86;.</li>
+</ul>
+<p><img src="assets/Snip20171122_11.png" alt=""></p>
+<hr>
+<h3 id="6&#x624B;&#x673A;&#x76F8;&#x5173;&#x622A;&#x56FE;">6.&#x624B;&#x673A;&#x76F8;&#x5173;&#x622A;&#x56FE;.<a name="phone_screenShot"></a></h3>
+<ul>
+<li><p>1.&#x6CA1;&#x6709;&#x5B89;&#x88C5; Google Play Services &#x7684;&#x624B;&#x673A;&#x7684;&#x663E;&#x793A;:
+<img src="assets/WechatIMG116.jpeg" alt=""></p>
+</li>
+<li><p>2.&#x6B63;&#x5E38;&#x7684;&#x624B;&#x673A;&#x663E;&#x793A;:
+<img src="assets/WechatIMG117.png" alt="">
+<img src="assets/WechatIMG118.jpeg" alt=""></p>
+</li>
+</ul>
+<footer class="page-footer"><span class="copyright">Copyright (c) 2017 Tim all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;:
+2017 - 11 - 22 16: 05: 38
+</span></footer>
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="./index.html" class="navigation navigation-prev " aria-label="Previous page: Introduction"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="./googlemapios-kai-fa.html" class="navigation navigation-next " aria-label="Next page: GoogleMap\_iOS\_开发"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="gitbook/app.js"></script>
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-splitter/splitter.js"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-search/lunr.min.js"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-search/search.js"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-sharing/buttons.js"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-fontsettings/buttons.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"tbfed-pagefooter":{"copyright":"Copyright (c) 2017 Tim","modify_label":"该文件修订时间:","modify_format":"YYYY - MM - DD HH: mm: ss"},"splitter":{},"anchor-navigation-ex":{"isRewritePageTitle":true},"highlight":{},"search":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>
